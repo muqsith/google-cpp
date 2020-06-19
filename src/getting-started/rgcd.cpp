@@ -48,4 +48,5 @@ int main()
 
     int gcd = mgcd(high, low);
     cout << "GCD of (" << a << ", " << b << ") is " << gcd << endl;
+    return 0;
 }

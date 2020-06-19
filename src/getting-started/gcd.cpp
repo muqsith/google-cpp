@@ -42,4 +42,5 @@ int main()
     }
 
     cout << "GCD of (" << a << ", " << b << ") is " << low << endl;
+    return 0;
 }

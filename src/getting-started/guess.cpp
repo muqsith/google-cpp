@@ -4,27 +4,30 @@
 
 using namespace std;
 
-int get_random_number(int range) {
+int get_random_number(int range)
+{
     return rand() % range;
 }
 
-
-int get_guess() {
+int get_guess()
+{
     int guess;
     bool invalid;
-    do {
-        if (invalid = !(cin >> guess)) {
+    do
+    {
+        if (invalid = !(cin >> guess))
+        {
             cin.clear();
             cin.ignore(sizeof(guess), '\n');
             cout << "Please enter a valid number" << endl;
         }
     } while (invalid);
-    
+
     return guess;
 }
 
-
-int main() {
+int main()
+{
     // initial setup
     time_t t = time(NULL);
     srand(t);
@@ -37,13 +40,16 @@ int main() {
 
     cout << "Guess a number in the range of " << lower << " and " << upper << ": " << endl;
 
-    do {
+    do
+    {
         guess = get_guess();
-        if (guess < random_number) {
+        if (guess < random_number)
+        {
             cout << "That's too low" << endl;
         }
 
-        if (guess > random_number) {
+        if (guess > random_number)
+        {
             cout << "That's too high" << endl;
         }
 

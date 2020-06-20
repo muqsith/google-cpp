@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.cjson": "jsonc",
+        "*.make": "makefile",
+        "*.ko": "html",
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "iomanip": "cpp",
+        "*.tcc": "cpp"
+    }
+}
